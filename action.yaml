@@ -21,6 +21,9 @@ inputs:
 runs:
   using: "composite"
 
+  permissions:
+    pull-requests: write
+
   steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Check out repository code
