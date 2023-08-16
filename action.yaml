@@ -16,7 +16,7 @@ inputs:
     required: true
   REPO_TOKEN:
     description: Your repo GITHUB_TOKEN
-    required: false
+    required: true
 
 runs:
   using: "composite"
