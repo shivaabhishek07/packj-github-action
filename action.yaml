@@ -147,13 +147,13 @@ runs:
     # Comment on the PR
     - name: Comment PR
       if: ${{ github.head_ref && env.CHECK_PASSED == 'true' }}
-      uses: thollander/actions-comment-pull-request@v2
+      uses: marocchino/sticky-pull-request-comment@v2.6.2
       with:
         message: <h2><img src="https://packj.dev/static/img/packj-factory-logo.svg" width="24" alt="Packj"> Packj Audit Report</h2> ${{ env.BODY }}
 
     - name: Comment PR
       if: ${{ github.head_ref && env.CHECK_PASSED == 'false' }}
-      uses: thollander/actions-comment-pull-request@v2
+      uses: marocchino/sticky-pull-request-comment@v2.6.2
       with:
         message: |
           <h2><img src="https://packj.dev/static/img/packj-factory-logo.svg" width="24" alt="Packj"> Packj Audit Report</h2>
